@@ -1,10 +1,3 @@
-"""
-This code sample shows Prebuilt Read operations with the Azure AI Document Intelligence client library.
-The async versions of the samples require Python 3.8 or later.
-
-To learn more, please visit the documentation - Quickstart: Document Intelligence (formerly Form Recognizer) SDKs
-https://learn.microsoft.com/azure/ai-services/document-intelligence/quickstarts/get-started-sdks-rest-api?pivots=programming-language-python
-"""
 from pathlib import Path
 from dotenv import load_dotenv
 import os
@@ -13,11 +6,6 @@ from azure.ai.documentintelligence import DocumentIntelligenceClient
 from azure.ai.documentintelligence.models import AnalyzeDocumentRequest
 import numpy as np
 
-"""
-Remember to remove the key from your code when you're done, and never post it publicly. For production, use
-secure methods to store and access your credentials. For more information, see 
-https://docs.microsoft.com/en-us/azure/cognitive-services/cognitive-services-security?tabs=command-line%2Ccsharp#environment-variables-and-application-configuration
-"""
 env_path = Path(__file__).resolve().parent.parent / ".env"
 load_dotenv(env_path)
 
