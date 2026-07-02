@@ -5,7 +5,7 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
-env_path = Path(__file__).resolve().parent.parent / ".env"
+env_path = Path(__file__).resolve().parent.parent.parent / ".env"
 load_dotenv(env_path)
 
 endpoint = os.getenv("DOCUMENT_INTELLIGENCE_ENDPOINT")

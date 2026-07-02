@@ -6,7 +6,7 @@ from azure.ai.documentintelligence import DocumentIntelligenceClient
 from azure.ai.documentintelligence.models import AnalyzeDocumentRequest
 import numpy as np
 
-env_path = Path(__file__).resolve().parent.parent / ".env"
+env_path = Path(__file__).resolve().parent.parent.parent / ".env"
 load_dotenv(env_path)
 
 endpoint = os.getenv("DOCUMENT_INTELLIGENCE_ENDPOINT")
